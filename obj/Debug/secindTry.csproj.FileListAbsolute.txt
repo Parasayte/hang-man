@@ -1,0 +1,10 @@
+C:\Users\Saad\source\repos\secindTry\bin\Debug\secindTry.exe.config
+C:\Users\Saad\source\repos\secindTry\bin\Debug\secindTry.exe
+C:\Users\Saad\source\repos\secindTry\bin\Debug\secindTry.pdb
+C:\Users\Saad\source\repos\secindTry\obj\Debug\secindTry.csproj.AssemblyReference.cache
+C:\Users\Saad\source\repos\secindTry\obj\Debug\secindTry.Form1.resources
+C:\Users\Saad\source\repos\secindTry\obj\Debug\secindTry.Properties.Resources.resources
+C:\Users\Saad\source\repos\secindTry\obj\Debug\secindTry.csproj.GenerateResource.cache
+C:\Users\Saad\source\repos\secindTry\obj\Debug\secindTry.csproj.CoreCompileInputs.cache
+C:\Users\Saad\source\repos\secindTry\obj\Debug\secindTry.exe
+C:\Users\Saad\source\repos\secindTry\obj\Debug\secindTry.pdb
