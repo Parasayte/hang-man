@@ -58,7 +58,7 @@ namespace secindTry
         {
             if (textBox1.Text == "")                                     //control if the input is empty
             {
-               MessageBox.Show("Please enter a letter");
+               MessageBox.Show("Please enter a letter","Not Exist",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             else                                                         //if the input is not empty the variable letter will be the letter that we got from input
             {  
@@ -110,7 +110,7 @@ namespace secindTry
                     if (HEALTH == 0)                                     //when the Health over
                     {
                         MessageBox.Show("You lose , the word was : " +
-                         string_word.ToUpper()+"\nthe other player turn!"); //messagebox to show what the word was
+                         string_word.ToUpper()+"\nthe other player turn!" ,"LOSER",MessageBoxButtons.OK,MessageBoxIcon.Exclamation); //messagebox to show what the word was
                         rnd = random.Next(0, tr.Length);                 //update the random number
                         label4.Text = "";                                //remove the not exist word
                         string_word = tr[rnd];                           //set new word
@@ -135,7 +135,7 @@ namespace secindTry
             }
             if (!secret_word.Contains('-'))                              //if the word get finished
             {
-                MessageBox.Show("GREAT JOB \ud83d\udc4f"+"\n+1 Point"); //congratilation in messagebox
+                MessageBox.Show("GREAT JOB , you find it  \ud83d\udc4f"+"\n+1 Point","WINNER",MessageBoxButtons.OK,MessageBoxIcon.Information); //congratilation in messagebox
                 rnd = random.Next(0, tr.Length);
                 label4.Text="";
                 string_word = tr[rnd];
@@ -179,6 +179,11 @@ namespace secindTry
             HEALTH = 7;
             label3.Text = "Health : " + HEALTH.ToString()+"X \u2764\ufe0f";
             label1.Text = "ADAM ASMA";
+        }
+
+        private void button1_MouseCaptureChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
