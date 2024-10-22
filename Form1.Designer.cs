@@ -32,14 +32,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.SecretWordLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -52,7 +52,6 @@
             this.label1.Size = new System.Drawing.Size(280, 77);
             this.label1.TabIndex = 0;
             this.label1.Text = "ADAM ASMA";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
@@ -81,19 +80,19 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label2
+            // SecretWordLabel
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(134, 287);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(378, 77);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "---------------";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.SecretWordLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.SecretWordLabel.AutoSize = true;
+            this.SecretWordLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecretWordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SecretWordLabel.Location = new System.Drawing.Point(134, 287);
+            this.SecretWordLabel.Name = "SecretWordLabel";
+            this.SecretWordLabel.Size = new System.Drawing.Size(378, 77);
+            this.SecretWordLabel.TabIndex = 3;
+            this.SecretWordLabel.Text = "---------------";
+            this.SecretWordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SecretWordLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -106,21 +105,6 @@
             this.label3.TabIndex = 4;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Snow;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(872, 447);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(12, 10);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "New";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
@@ -130,7 +114,6 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 32);
             this.label4.TabIndex = 0;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -152,6 +135,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 32);
             this.label6.TabIndex = 7;
+           
             // 
             // label7
             // 
@@ -174,22 +158,34 @@
             this.label8.TabIndex = 9;
             this.label8.Text = "made by selam";
             // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label9.Location = new System.Drawing.Point(112, 391);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(29, 34);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "💡";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
             // Form1
             // 
-            this.AcceptButton = this.button2;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(884, 461);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.SecretWordLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -206,6 +202,8 @@
             this.PerformLayout();
         }
 
+        private System.Windows.Forms.Label label9;
+
         private System.Windows.Forms.Label label8;
 
         private System.Windows.Forms.Label label7;
@@ -221,9 +219,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label SecretWordLabel;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
     }
 }
 
