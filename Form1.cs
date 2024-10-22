@@ -52,7 +52,7 @@ namespace secindTry
             else
                 label7.Text = "2. Player turn";
             label3.Text = "Health : " + HEALTH.ToString()+"X ❤️‍";       //print the health
-            label2.Text = secret_string_word;                            //show the secret word on screen
+            SecretWordLabel.Text = secret_string_word;                            //show the secret word on screen
         }
         private void button1_Click(object sender, EventArgs e)           //when user press Check button this will work
         {
@@ -73,7 +73,7 @@ namespace secindTry
                     secret_word[j] = letter;                             //put the letter that user enter in the secret word
                     CharArrayToString(secret_word, secret_string_word);                 //function to convert char array to string
                     secret_string_word = new string(secret_word);        //convert the secret word array to string    
-                    label2.Text = secret_string_word;                    // cause the label doesnt accept char arrays
+                    SecretWordLabel.Text = secret_string_word;                    // cause the label doesnt accept char arrays
                 }
             }
             if (!string_word.Contains(letter))                           //if the secret word doesnt find
@@ -117,7 +117,7 @@ namespace secindTry
                         secret_string_word =
                             new string('-', string_word.Length);       //make the secret word from the word length
                         secret_word = secret_string_word.ToCharArray();  //convert the word to char array
-                        label2.Text = secret_string_word;                //show the secret word on the screen
+                        SecretWordLabel.Text = secret_string_word;                //show the secret word on the screen
                         this.BackgroundImage = Image.FromFile("frames\\hangman_1.png");  //set the default background
                         HEALTH = 7;                                      //set new Health
                         label3.Text =
@@ -126,11 +126,13 @@ namespace secindTry
                         { 
                             turn = true;                                  //the turn will be in 1p
                             label7.Text = "1. Player turn";               //show on the screen
+                            
                         }
                         else{                                            //if the turn was in 1p
                             turn = false;                                //the turn will be in 2p
                             label7.Text = "2. Player turn";              //show on the screen 
                         } 
+                        label9.Enabled = true;
                     }
             }
             if (!secret_word.Contains('-'))                              //if the word get finished
@@ -141,7 +143,7 @@ namespace secindTry
                 string_word = tr[rnd];
                 secret_string_word = new string('-',string_word.Length);
                 secret_word = secret_string_word.ToCharArray();
-                label2.Text = secret_string_word;
+                SecretWordLabel.Text = secret_string_word;
                 label1.Text = "ADAM ASMA";
                 if (turn == true)
                 {
@@ -164,26 +166,33 @@ namespace secindTry
             for (int j = 0; j < letter.Length; j++)
             { sb.Append(letter[j]); }
             return sb.ToString(); }
-
-        private void button2_Click(object sender, EventArgs e){ }
-        private void label4_Click(object sender, EventArgs e){ }
-        private void label1_Click(object sender, EventArgs e) { }
+        
         private void label5_Click(object sender, EventArgs e)            // secret trick to set new word and recharg the Health
         { rnd = random.Next(0, tr.Length);
             label4.Text = "";
             string_word = tr[rnd];
             secret_string_word = new string('-', string_word.Length);
             secret_word = secret_string_word.ToCharArray();
-            label2.Text = secret_string_word;
+            SecretWordLabel.Text = secret_string_word;
             this.BackgroundImage = Image.FromFile("frames\\hangman_1.png");
             HEALTH = 7;
             label3.Text = "Health : " + HEALTH.ToString()+"X \u2764\ufe0f";
             label1.Text = "ADAM ASMA";
+            label9.Enabled = true;
         }
 
-        private void button1_MouseCaptureChanged(object sender, EventArgs e)
-        {
-           
+        
+
+        private void label9_Click(object sender, EventArgs e)
+        {  
+            label4.Text="";   
+           rnd= random.Next(0, string_word.Length-1);
+           secret_word[rnd] = string_word[rnd]; 
+           secret_word[rnd+1] = string_word[rnd+1];
+           CharArrayToString(secret_word, secret_string_word);                 
+           secret_string_word = new string(secret_word);        
+           SecretWordLabel.Text = secret_string_word; 
+           label9.Enabled=false;
         }
     }
 }
