@@ -1,10 +1,10 @@
-# Hangman Game [![AGPL License](https://img.shields.io/badge/CSharp-Project-purple)](https://learn.microsoft.com/tr-tr/dotnet/csharp/)
-
-[![GitHub repo size](https://img.shields.io/github/repo-size/Parasayte/hang_man)](https://github.com/Parasayte/hang_man)
-[![GitHub stars](https://img.shields.io/github/stars/Parasayte/hang_man?style=social)](https://github.com/Parasayte/hang_man/stargazers)
-![C#](https://img.shields.io/badge/Language-C%23-5B3F8D)
+![Repo Size](https://img.shields.io/github/repo-size/Parasayte/hang_man?color=teal)
 ![Last Commit](https://img.shields.io/github/last-commit/Parasayte/hang_man)
+![Top Language](https://img.shields.io/github/languages/top/Parasayte/hang_man?color=gold)
 ![Community](https://img.shields.io/badge/Community-Active-green)
+[![GitHub stars](https://img.shields.io/github/stars/Parasayte/hang_man?style=social)](https://github.com/Parasayte/hang_man/stargazers)
+
+# Hangman Game [![AGPL License](https://img.shields.io/badge/CSharp-Project-purple)](https://learn.microsoft.com/tr-tr/dotnet/csharp/)
 
 
 ## Project Description
