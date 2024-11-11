@@ -1,7 +1,7 @@
 [![Repo Size](https://img.shields.io/github/repo-size/Parasayte/hang_man?color=blue&style=plastic)](https://github.com/Parasayte/hang_man)
 [![Last Commit](https://img.shields.io/github/last-commit/Parasayte/hang_man?color=crimson&style=plastic)](https://github.com/Parasayte/hang_man/commits)
 [![Top Language](https://img.shields.io/github/languages/top/Parasayte/hang_man?color=indigo&style=plastic)](https://github.com/Parasayte/hang_man)
-[![Community](https://img.shields.io/badge/Community-Active-brightgreen&style=plastic)](https://github.com/Parasayte/hang_man/discussions)
+[![Community](https://img.shields.io/badge/Community-Active-gold?style=plastic)](https://github.com/Parasayte/hang_man/discussions)
 [![GitHub stars](https://img.shields.io/github/stars/Parasayte/hang_man?color=darkblue&style=social)](https://github.com/Parasayte/hang_man/stargazers)
 
 # Hangman Game [![AGPL License](https://img.shields.io/badge/CSharp-Project-purple?style=plastic)](https://learn.microsoft.com/tr-tr/dotnet/csharp/)
